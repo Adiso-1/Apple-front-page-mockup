@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 62.5%;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 3rem;
+}
+h5 {
+  font-size: 1.5rem;
+}
+a {
+  text-decoration: none;
+  color: #2892f7;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+i {
+  color: #2892f7;
+  font-size: 1rem;
+  padding-left: 5px;
+}
+a:hover {
+  text-decoration: underline;
+}
+ul {
+  list-style: none;
+}
+/* Page */
+#navbar {
+  background: rgba(0, 0, 0, 0.95);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  padding: 1rem;
+}
+#navbar .navbar-content {
+  max-width: 980px;
+  margin: 0 auto;
+}
+#navbar .navbar-content ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+#navbar .navbar-content ul li a {
+  color: #cdcdcd;
+  font-size: 1rem;
+}
+#navbar .navbar-content ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+#navbar .navbar-content ul li i {
+  color: #cdcdcd;
+  text-decoration: none;
+}
+#navbar .navbar-content ul li i:hover {
+  color: #fff;
+  text-decoration: none;
+}
+#navbar .navbar-content ul li .fa-apple {
+  font-size: 1.5rem;
+}
+/* Hero Images */
+.hompage-section-hero-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+}
+.hompage-section-hero-grid .hero-photo {
+  position: relative;
+  height: 45.5rem;
+  width: 100%;
+  text-align: center;
+  padding: 55px 15px 0;
+}
+.hompage-section-hero-grid .hero-photo.iphone12 {
+  background: url("../img/iphone_12__colors.jpg") no-repeat center center/cover;
+}
+.hompage-section-hero-grid .hero-photo.iphone12 h2 {
+  margin-top: 2rem;
+}
+.hompage-section-hero-grid .hero-photo a {
+  margin-top: 1rem;
+}
+
+.hompage-section-hero-grid .hero-photo.iphone12-pro {
+  color: #fff;
+  background: url("../img/iphone12pro.jpg") no-repeat center center/cover;
+}
+.hompage-section-hero-grid .hero-photo.apple-watch-6 {
+  background-color: black;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.hompage-section-hero-grid .hero-photo.apple-watch-6 .watch-connected {
+  margin-top: 2rem;
+}
+/* ! =================product-grid================= */
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+.product-grid .grid-item {
+  height: 39rem;
+  background: black;
+  color: #fff;
+  text-align: center;
+  padding-top: 3rem;
+}
+.product-grid .grid-item h4,
+.product-grid .grid-item h5,
+.product-grid .grid-item h5 {
+  margin: 1rem 0;
+}
+
+.product-grid .grid-item.mcbook {
+  background: url("../img/macbook_air.jpg") no-repeat center center/cover;
+}
+.product-grid .grid-item.ipad {
+  color: #1d1d1f;
+  background: url("../img/ipad-air.jpg") no-repeat center center/cover;
+}
+.product-grid .grid-item.tv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: url("../img/apple-tv.jpg");
+  padding-bottom: 4rem;
+}
+.product-grid .grid-item.tv a {
+  position: relative;
+}
+.product-grid .grid-item.tv i {
+  color: #fff;
+}
+.product-grid .grid-item.tv .fa-arrow-right {
+  position: absolute;
+  bottom: 0;
+  transform: rotate(-45deg);
+  color: #fff;
+  padding-left: 10px;
+}
+.product-grid .grid-item.airpods img {
+  margin-top: 1rem;
+}
+.product-grid .grid-item.tv h4 {
+  margin-bottom: 0;
+}
+.product-grid .grid-item.tv h5 {
+  margin-top: 0;
+  position: relative;
+}
+.product-grid .grid-item.tv h5 a {
+  position: absolute;
+  top: 60%;
+  color: #fff;
+  font-size: 0.7rem;
+}
+.product-grid .grid-item.tv h5 a:hover {
+  color: #2892f7;
+  cursor: pointer;
+}
+.product-grid .grid-item.tv img {
+  width: 6rem;
+}
+
+.product-grid .grid-item.tv div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 0 auto;
+}
+.product-grid .grid-item.tv div a {
+  color: #fff;
+}
+/* ! =================footer================= */
+.footer {
+  background: #f5f5f7;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+.footer-container {
+  max-width: 980px;
+  margin: 0 auto;
+  color: #86868b;
+}
+.footer-container .footer-menu {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.footer-container .footer-menu li {
+  padding-bottom: 1rem;
+}
+.footer-container .footer-menu li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer-container .footer-menu li:first-child {
+  font-weight: bold;
+  color: #1d1d1f;
+}
+.footer-container p {
+  font-size: 1rem;
+  border-bottom: 1px solid #86868b;
+  padding: 1rem 0;
+}
+.footer-container p a {
+  font-size: 1rem !important;
+}
+.footer-container .copyrights {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: none;
+}
+.footer-container .copyrights ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-container .copyrights ul li {
+  margin-left: 1rem;
+}
+.footer-container .copyrights ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer-container .copyrights p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
