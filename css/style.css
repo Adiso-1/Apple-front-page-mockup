@@ -1,7 +1,12 @@
+@font-face {
+  font-family: "SFpro";
+  src: url("../fonts/sf-pro-display_regular.ttf");
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "SFpro";
 }
 body {
   font-size: 62.5%;
